@@ -12,7 +12,7 @@ import SwiftData
 struct CirkitApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Component.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -30,3 +30,4 @@ struct CirkitApp: App {
         .modelContainer(sharedModelContainer)
     }
 }
+
